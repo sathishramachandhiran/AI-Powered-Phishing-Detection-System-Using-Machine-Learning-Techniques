@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "AI-Powered Phishing Detection",
+  "version": "1.0",
+  "description": "Offline phishing detection using ML-simulated heuristics for URLs and text",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Phishing Detector"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

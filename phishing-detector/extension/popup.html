@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Phishing Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛡️ AI Phishing Detector</h1>
+      <p class="subtitle">Offline ML-Powered Security Analysis</p>
+    </header>
+
+    <div class="module-card">
+      <div class="module-header">
+        <h2>🔗 URL Scanner</h2>
+        <p class="module-desc">Random Forest Algorithm</p>
+      </div>
+      <div class="input-group">
+        <input type="text" id="urlInput" placeholder="Enter URL to scan..." />
+        <button id="scanUrlBtn" class="btn btn-primary">Scan URL</button>
+        <button id="scanCurrentBtn" class="btn btn-secondary">Scan Current Tab</button>
+      </div>
+      <div id="urlResult" class="result-box hidden"></div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-header">
+        <h2>📧 Text/Email Scanner</h2>
+        <p class="module-desc">TF-IDF + DistilBERT Model</p>
+      </div>
+      <div class="input-group">
+        <textarea id="textInput" placeholder="Paste email or message text here..."></textarea>
+        <button id="scanTextBtn" class="btn btn-primary">Analyze Text</button>
+      </div>
+      <div id="textResult" class="result-box hidden"></div>
+    </div>
+
+    <footer>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
